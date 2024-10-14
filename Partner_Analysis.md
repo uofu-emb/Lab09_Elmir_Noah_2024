@@ -1,4 +1,4 @@
-# ELmir's FSM
+# Elmir's FSM
 - Counter_Examples:
   - In Elmir's, from idle, if northbound_approach signal is recieved, we enter the second state, from the second state, there is no logic to check for southbound_approach, so we can recive that signal during state 2. In state 3 we can recieve either northbound_depart or southbound_depart, and after 10 seconds, the other train might still be on the tracks, which is not safe.
 
